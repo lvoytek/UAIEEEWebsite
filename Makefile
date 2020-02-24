@@ -5,6 +5,10 @@ install:
 	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash > /dev/null
 	(source ~/.nvm/nvm.sh > /dev/null; nvm install 10.16.3; node -e "console.log('Running Node.js ' + process.version)"; npm install express-generator -g; express --view=pug ieee_site; cd ieee_site; npm install; npm install mongoose; npm audit fix)
 
+	rm -rf ieee_site/public
+	rm -rf ieee_site/routes
+	rm -f ieee_site/app.js
+
 	cp -r src/html/* ieee_site/public
 	cp -r src/routes/* ieee_site/routes 
 	cp src/app.js ieee_site
