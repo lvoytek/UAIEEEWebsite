@@ -9,8 +9,9 @@ install:
 	rm -rf ieee_site/routes
 	rm -f ieee_site/app.js
 
-	cp -r src/html/* ieee_site/public
-	cp -r src/routes/* ieee_site/routes 
+	cp -r src/html/ ieee_site/public
+	cp -r src/routes/ ieee_site/routes 
+	cp -r src/images/ ieee_site/public/images
 	cp src/app.js ieee_site
 
 	mkdir -f mongodata
@@ -19,7 +20,9 @@ install:
 .PHONY:update
 update:
 	git pull
-	cp src/html/* ieee_site/public
+	cp -r src/html/* ieee_site/public
+	cp -r src/routes/* ieee_site/routes 
+	cp -r src/images/ ieee_site/public/images
 	cp src/app.js ieee_site
 
 
