@@ -3,4 +3,519 @@ body
 	font: normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
 	color: #333333;
 	background: #2d3037 url(http://1.bp.blogspot.com/-3b39NQVnyNc/U_9oni5pdWI/AAAAAAAAAK4/qLK6caQeWwY/s0/sshot50e32fce7978a.jpg) repeat fixed top left;
+	margin: 0;
+}
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+  border: 0px;
+}
+
+::-moz-selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+::selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+.uaieee-search-box .mdl-textfield__input {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.uaieee-header .mdl-menu__container {
+  z-index: 50;
+  margin: 0 !important;
+}
+
+
+.mdl-textfield--expandable {
+  width: auto;
+}
+
+.uaieee-fab {
+  position: absolute;
+  right: 20%;
+  bottom: -26px;
+  z-index: 3;
+  background: #64ffda !important;
+  color: black !important;
+}
+
+.uaieee-mobile-title {
+  display: none !important;
+}
+
+
+.uaieee-logo-image {
+  height: 40px;
+}
+
+
+.uaieee-header {
+  overflow: visible;
+  background-color: white;
+}
+
+  .uaieee-header .material-icons {
+    color: #767777 !important;
+  }
+
+  .uaieee-header .mdl-layout__drawer-button {
+    background: transparent;
+    color: #767777;
+  }
+
+  .uaieee-header .mdl-navigation__link {
+    color: #757575;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .uaieee-navigation-container {
+    /* Simple hack to make the overflow happen to the left instead... */
+    direction: rtl;
+    order: 1;
+    width: 500px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .uaieee-navigation {
+    /* ... and now make sure the content is actually LTR */
+    direction: ltr;
+    justify-content: flex-end;
+    width: 800px;
+  }
+
+  .uaieee-search-box.is-focused + .uaieee-navigation-container {
+    opacity: 0;
+    width: 100px;
+  }
+
+
+  .uaieee-navigation .mdl-navigation__link {
+    display: inline-block;
+    height: 60px;
+    line-height: 68px;
+    background-color: transparent !important;
+    border-bottom: 4px solid transparent;
+  }
+
+    .uaieee-navigation .mdl-navigation__link:hover {
+      border-bottom: 4px solid #8bc34a;
+    }
+
+  .uaieee-search-box {
+    order: 2;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .uaieee-more-button {
+    order: 3;
+  }
+
+
+.uaieee-drawer {
+  border-right: none;
+}
+
+  .uaieee-drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+  }
+
+  .uaieee-drawer .mdl-navigation__link.mdl-navigation__link {
+    font-size: 14px;
+    color: #757575;
+  }
+
+  .uaieee-drawer span.mdl-navigation__link.mdl-navigation__link {
+    color: #8bc34a;
+  }
+
+  .uaieee-drawer .mdl-layout-title {
+    position: relative;
+    background: #6ab344;
+    height: 160px;
+  }
+
+    .uaieee-drawer .uaieee-logo-image {
+      position: absolute;
+      bottom: 16px;
+    }
+
+.uaieee-be-together-section {
+  position: relative;
+  height: 800px;
+  width: auto;
+  background-color: #f3f3f3;
+  background: url('images/slide01.jpg') center 30% no-repeat;
+  background-size: cover;
+}
+
+.logo-font {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color: #DCDDDD;
+  font-weight: 500;
+}
+
+.uaieee-slogan {
+  font-size: 60px;
+  padding-top: 160px;
+}
+
+.uaieee-sub-slogan {
+  font-size: 21px;
+  padding-top: 24px;
+}
+
+.uaieee-create-character {
+  font-size: 21px;
+  padding-top: 400px;
+}
+
+  .uaieee-create-character a {
+    text-decoration: none;
+    color: #767777;
+    font-weight: 300;
+  }
+
+.uaieee-screen-section {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.uaieee-screens {
+  text-align: right;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.uaieee-screen {
+  text-align: center;
+}
+
+.uaieee-screen .uaieee-link {
+  margin-top: 16px;
+  display: block;
+  z-index: 2;
+}
+
+.uaieee-image-link {
+  text-decoration: none;
+}
+
+.uaieee-wear {
+  display: inline-block;
+  width: 160px;
+  margin-right: 32px;
+}
+
+  .uaieee-wear .uaieee-screen-image {
+    width: 40%;
+    z-index: 1;
+  }
+
+
+.uaieee-phone {
+  display: inline-block;
+  width: 64px;
+  margin-right: 48px;
+}
+
+  .uaieee-phone .uaieee-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.uaieee-tablet {
+  display: inline-block;
+  width: 110px;
+  margin-right: 64px;
+}
+
+  .uaieee-tablet .uaieee-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+  .uaieee-tablet .uaieee-link {
+    display: block;
+    z-index: 2;
+  }
+
+
+.uaieee-tv {
+  display: inline-block;
+  width: 300px;
+  margin-right: 80px;
+}
+
+  .uaieee-tv .uaieee-screen-image {
+    width: 100%;
+    z-index: 1;
+  }
+
+
+.uaieee-auto {
+  display: inline-block;
+  width: 300px;
+  overflow: hidden;
+}
+
+  .uaieee-auto .uaieee-screen-image {
+    display: block;
+    height: 300px;
+    z-index: 1;
+  }
+
+
+.uaieee-wear-section {
+  position: relative;
+  background: url('images/wear.png') center top no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+.uaieee-wear-band {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #37474f;
+}
+
+.uaieee-wear-band-text {
+  max-width: 800px;
+  margin-left: 25%;
+  padding: 24px;
+  text-align: left;
+  color: white;
+}
+
+  .uaieee-wear-band-text p {
+    padding-top: 8px;
+  }
+
+.uaieee-link {
+  text-decoration: none;
+  color: #8bc34a !important;
+}
+
+  .uaieee-link:hover {
+    color: #7cb342 !important;
+  }
+
+  .uaieee-link .material-icons {
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+  }
+
+.uaieee-alt-link {
+  text-decoration: none;
+  color: #64ffda !important;
+  font-size: 16px;
+}
+
+  .uaieee-alt-link:hover {
+    color: #00bfa5 !important;
+  }
+
+  .uaieee-alt-link .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+.uaieee-customized-section {
+  text-align: center;
+}
+
+.uaieee-customized-section-text {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 16px 0 16px;
+}
+
+  .uaieee-customized-section-text p {
+    padding-top: 16px;
+  }
+
+.uaieee-customized-section-image {
+  background: url('images/devices.jpg') center top no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.uaieee-more-section {
+  padding: 80px 0;
+  max-width: 1044px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .uaieee-more-section .uaieee-section-title {
+    margin-left: 12px;
+    padding-bottom: 24px;
+  }
+
+.uaieee-card-container {
+}
+
+  .uaieee-card-container .mdl-card__media {
+    overflow: hidden;
+    background: transparent;
+  }
+
+    .uaieee-card-container .mdl-card__media img {
+      width: 100%;
+    }
+
+  .uaieee-card-container .mdl-card__title {
+    background: transparent;
+    height: auto;
+  }
+
+  .uaieee-card-container .mdl-card__title-text {
+    color: black;
+    height: auto;
+  }
+
+  .uaieee-card-container .mdl-card__supporting-text {
+    height: auto;
+    color: black;
+    padding-bottom: 56px;
+  }
+
+  .uaieee-card-container .mdl-card__actions {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .uaieee-card-container .mdl-card__actions a {
+    border-top: none;
+    font-size: 16px;
+  }
+
+.uaieee-footer {
+  background-color: #fafafa;
+  position: relative;
+}
+
+  .uaieee-footer a:hover {
+    color: #8bc34a;
+  }
+
+  .uaieee-footer .mdl-mega-footer--top-section::after {
+    border-bottom: none;
+  }
+
+  .uaieee-footer .mdl-mega-footer--middle-section::after {
+    border-bottom: none;
+  }
+
+  .uaieee-footer .mdl-mega-footer--bottom-section {
+    position: relative;
+  }
+
+  .uaieee-footer .mdl-mega-footer--bottom-section a {
+    margin-right: 2em;
+  }
+
+  .uaieee-footer .mdl-mega-footer--right-section a .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+
+.uaieee-link-menu:hover {
+  cursor: pointer;
+}
+
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+  .uaieee-navigation-container {
+    display: none;
+  }
+
+  .uaieee-title {
+    display: none !important;
+  }
+
+  .uaieee-mobile-title {
+    display: block !important;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 12px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
+     consecutive "+" operators in some cases. Therefore, we need to use both
+     here to cover all the bases. */
+  .uaieee.uaieee-search-box.is-focused ~ .uaieee-mobile-title,
+  .uaieee-search-box.is-focused + .uaieee-navigation-container + .uaieee-mobile-title {
+    opacity: 0;
+  }
+
+  .uaieee-more-button {
+    display: none;
+  }
+
+  .uaieee-search-box.is-focused {
+    width: calc(100% - 48px);
+  }
+
+  .uaieee-search-box .mdl-textfield__expandable-holder {
+    width: 100%;
+  }
+
+  .uaieee-be-together-section {
+    height: 350px;
+  }
+
+  .uaieee-slogan {
+    font-size: 26px;
+    margin: 0 16px;
+    padding-top: 24px;
+  }
+
+  .uaieee-sub-slogan {
+    font-size: 16px;
+    margin: 0 16px;
+    padding-top: 8px;
+  }
+
+  .uaieee-create-character {
+    padding-top: 200px;
+    font-size: 16px;
+  }
+
+  .uaieee-create-character img {
+    height: 12px;
+  }
+
+  .uaieee-fab {
+    display: none;
+  }
+
+  .uaieee-wear-band-text {
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .uaieee-footer .mdl-mega-footer--bottom-section {
+    display: none;
+  }
 }
