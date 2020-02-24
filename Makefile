@@ -2,23 +2,15 @@ SHELL:=/bin/bash
 
 .PHONY:install
 install:
-	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-	source ~/.nvm/nvm.sh
+	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash > /dev/null
+	(source ~/.nvm/nvm.sh > /dev/null; nvm install 10.16.3; node -e "console.log('Running Node.js ' + process.version)"; npm install express-generator -g; express --view=pug ieee_site; cd ieee_site; npm install; npm install mongoose; npm audit fix)
 
-	([ -s "~/.nvm/nvm.sh" ] && \. "~/.nvm/nvm.sh")
-	([ -s "~/.nvm/bash_completion" ] && \. "~/.nvm/bash_completion")
-
-	nvm install 10.16.3
-	node -e "console.log('Running Node.js ' + process.version)"
-
-	mkdir mongodata
-	mongod -dbpath mongodata
-
-	npm install express-generator -g
-	express --view=pug ieee_site
-	(cd ieee_site; npm install; npm install mongoose; npm audit fix)
-	cp src/html/* ieee_site/public
+	cp -r src/html/* ieee_site/public
+	cp -r src/routes/* ieee_site/routes 
 	cp src/app.js ieee_site
+
+	mkdir -f mongodata
+	mongod -dbpath mongodata
 
 .PHONY:update
 update:
@@ -53,3 +45,8 @@ routing:
 
 	sudo ln /etc/nginx/sites-available/$SERVERNAME /etc/nginx/sites-enabled/$SERVERNAME
 	sudo service nginx restart
+
+.PHONY:clean
+clean:
+	rm -rf ieee_site
+	rm -rf mongodata
