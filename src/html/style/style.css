@@ -12,12 +12,12 @@ a img{
 }
 
 ::-moz-selection {
-  background-color: #6ab344;
+  background-color: #6a44b3;
   color: #fff;
 }
 
 ::selection {
-  background-color: #6ab344;
+  background-color: #6a44b3;
   color: #fff;
 }
 
@@ -213,58 +213,6 @@ a img{
   text-decoration: none;
 }
 
-.uaieee-wear {
-  display: inline-block;
-  width: 160px;
-  margin-right: 32px;
-}
-
-  .uaieee-wear .uaieee-screen-image {
-    width: 40%;
-    z-index: 1;
-  }
-
-
-.uaieee-phone {
-  display: inline-block;
-  width: 64px;
-  margin-right: 48px;
-}
-
-  .uaieee-phone .uaieee-screen-image {
-    width: 100%;
-    z-index: 1;
-  }
-
-
-.uaieee-tablet {
-  display: inline-block;
-  width: 110px;
-  margin-right: 64px;
-}
-
-  .uaieee-tablet .uaieee-screen-image {
-    width: 100%;
-    z-index: 1;
-  }
-
-  .uaieee-tablet .uaieee-link {
-    display: block;
-    z-index: 2;
-  }
-
-
-.uaieee-tv {
-  display: inline-block;
-  width: 300px;
-  margin-right: 80px;
-}
-
-  .uaieee-tv .uaieee-screen-image {
-    width: 100%;
-    z-index: 1;
-  }
-
 
 .uaieee-auto {
   display: inline-block;
@@ -279,17 +227,16 @@ a img{
   }
 
 
-.uaieee-wear-section {
+.text-overlay-section {
   position: relative;
-  background: url('images/wear.png') center top no-repeat;
   background-size: cover;
   height: 800px;
 }
 
-.uaieee-wear-band {
+.text-overlay-band {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 80%;
   text-align: center;
   background-color: #37474f;
 }
@@ -308,11 +255,11 @@ a img{
 
 .uaieee-link {
   text-decoration: none;
-  color: #8bc34a !important;
+  color: #4a3bc3 !important;
 }
 
   .uaieee-link:hover {
-    color: #7cb342 !important;
+    color: #427cb3 !important;
   }
 
   .uaieee-link .material-icons {
@@ -323,12 +270,12 @@ a img{
 
 .uaieee-alt-link {
   text-decoration: none;
-  color: #64ffda !important;
+  color: #ba64ff !important;
   font-size: 16px;
 }
 
   .uaieee-alt-link:hover {
-    color: #00bfa5 !important;
+    color: #2265bf !important;
   }
 
   .uaieee-alt-link .material-icons {
@@ -413,7 +360,7 @@ a img{
 }
 
   .uaieee-footer a:hover {
-    color: #8bc34a;
+    color: #4a8bc3;
   }
 
   .uaieee-footer .mdl-mega-footer--top-section::after {
