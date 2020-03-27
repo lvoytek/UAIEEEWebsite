@@ -38,6 +38,12 @@ ubuntu_setup:
 	sudo apt install -y gcc git mongodb nginx
 
 
+.PHONY:arch_setup
+arch_setup:
+	sudo pacman -Syu
+	sudo pacman -S gcc git
+
+
 .PHONY:routing
 routing:
 	sudo rm /etc/nginx/sites-enabled/default
