@@ -46,7 +46,7 @@ arch_setup:
 
 .PHONY:routing
 routing:
-	sudo rm /etc/nginx/sites-enabled/default
+	sudo rm -f /etc/nginx/sites-enabled/default
 
 	echo "server {
 	    listen 80;
