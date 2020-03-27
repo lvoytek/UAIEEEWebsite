@@ -14,7 +14,7 @@ install:
 	cp -r src/images/ ieee_site/public/images
 	cp src/app.js ieee_site
 
-	mkdir -f mongodata
+	mkdir mongodata
 	mongod -dbpath mongodata
 
 .PHONY:update
