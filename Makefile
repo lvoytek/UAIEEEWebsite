@@ -50,7 +50,7 @@ routing:
 
 	echo "server {
 	    listen 80;
-	    server_name uaieee.com www.uaieee.com;
+	    server_name uaieee.com www.uaieee.com uaieee.org www.uaieee.org arizona.ieee.org www.arizona.ieee.org;
 
 	    location / {
 	        proxy_set_header   X-Forwarded-For \$remote_addr;
@@ -59,9 +59,9 @@ routing:
 	    }
 	}" >> .tmpsrv
 
-	sudo cp .tmpsrv /etc/nginx/sites-available/$SERVERNAME
+	sudo cp .tmpsrv /etc/nginx/sites-available/uaieee
 
-	sudo ln /etc/nginx/sites-available/$SERVERNAME /etc/nginx/sites-enabled/$SERVERNAME
+	sudo ln /etc/nginx/sites-available/uaieee /etc/nginx/sites-enabled/uaieee
 	sudo service nginx restart
 
 .PHONY:clean
