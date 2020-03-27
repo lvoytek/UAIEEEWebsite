@@ -12,12 +12,12 @@ a img{
 }
 
 ::-moz-selection {
-  background-color: #6a44b3;
+  background-color: #2a44b3;
   color: #fff;
 }
 
 ::selection {
-  background-color: #6a44b3;
+  background-color: #2a44b3;
   color: #fff;
 }
 
@@ -105,7 +105,7 @@ a img{
   }
 
     .uaieee-navigation .mdl-navigation__link:hover {
-      border-bottom: 4px solid #8bc34a;
+      border-bottom: 4px solid #4a8bc3;
     }
 
   .uaieee-search-box {
@@ -135,12 +135,12 @@ a img{
   }
 
   .uaieee-drawer span.mdl-navigation__link.mdl-navigation__link {
-    color: #8bc34a;
+    color: #4a8bc3;
   }
 
   .uaieee-drawer .mdl-layout-title {
     position: relative;
-    background: #6ab344;
+    background: #446ab3;
     height: 160px;
   }
 
@@ -149,14 +149,6 @@ a img{
       bottom: 16px;
     }
 
-.uaieee-be-together-section {
-  position: relative;
-  height: 800px;
-  width: auto;
-  background-color: #f3f3f3;
-  background: url('images/slide01.jpg') center 30% no-repeat;
-  background-size: cover;
-}
 
 .logo-font {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
@@ -270,7 +262,7 @@ a img{
 
 .uaieee-alt-link {
   text-decoration: none;
-  color: #ba64ff !important;
+  color: #5a64ff !important;
   font-size: 16px;
 }
 
