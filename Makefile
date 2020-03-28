@@ -47,22 +47,20 @@ arch_setup:
 .PHONY:routing
 routing:
 	sudo rm -f /etc/nginx/sites-enabled/default
+	sudo rm -f /etc/nginx/sites-enabled/uaieee
 
-	echo "server {
-	    listen 80;
-	    server_name uaieee.com www.uaieee.com uaieee.org www.uaieee.org arizona.ieee.org www.arizona.ieee.org;
-
-	    location / {
-	        proxy_set_header   X-Forwarded-For \$remote_addr;
-	        proxy_set_header   Host \$http_host;
-	        proxy_pass         \"http://127.0.0.1:3000\";
-	    }
-	}" >> .tmpsrv
+	echo -e "server {\n\tlisten 80;\n\tserver_name uaieee.com www.uaieee.com uaieee.org www.uaieee.org arizona.ieee.org www.arizona.ieee.org;\n\tlocation / {\n\t\tproxy_set_header X-Forwarded-For \$remote_addr;\n\t\tproxy_set_header Host \$http_host;\n\t\tproxy_pass \"http://127.0.0.1:3000\";\n\t}\n}" > .tmpsrv
 
 	sudo cp .tmpsrv /etc/nginx/sites-available/uaieee
 
 	sudo ln /etc/nginx/sites-available/uaieee /etc/nginx/sites-enabled/uaieee
 	sudo service nginx restart
+
+
+.PHONY:start
+start:
+	(cd ieee_site; npm start)
+
 
 .PHONY:clean
 clean:
