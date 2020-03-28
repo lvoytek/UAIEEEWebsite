@@ -228,14 +228,18 @@ a img{
 .text-overlay-band {
   position: absolute;
   bottom: 0;
+  margin-left: 10%;
+  margin-bottom: 200px;
   width: 80%;
   text-align: center;
   background-color: #37474f;
 }
 
-.uaieee-wear-band-text {
-  max-width: 800px;
-  margin-left: 25%;
+.uaieee-overlay-band-text {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   padding: 24px;
   text-align: left;
   color: white;
