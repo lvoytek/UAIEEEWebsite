@@ -62,6 +62,11 @@ start:
 	(cd ieee_site; npm start)
 
 
+.PHONY:permastart
+permastart:
+	(cd ieee_site; nohup npm start > ../serverLog &)
+
+
 .PHONY:clean
 clean:
 	rm -rf ieee_site
